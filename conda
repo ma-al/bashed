@@ -1,0 +1,27 @@
+# Bash aliases for Ana/Miniconda
+
+alias cenv='conda info --envs'
+alias cdcp='cd ${CONDA_PREFIX} && echo -n Inside  && pwd'
+alias clis='conda list'
+
+function sa
+{
+    if [[ -z $1 ]] ; then
+        echo "Give me a Conda enviroment name"
+        cenv
+        return;
+    fi
+
+    #source deactivate
+    echo "Activating Conda Environment:" $1
+    source activate $1
+    cdcp
+    cenv
+}
+
+function sd
+{
+    source deactivate
+    cdd
+    echo Deactivated and back to: `pwd`
+}

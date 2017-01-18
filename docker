@@ -1,0 +1,9 @@
+# Aliases for Docker
+
+alias dpsa="docker ps -a"
+alias dpse="docker ps --filter=\"status=exited\""
+alias dpsn="dpsa | tail -n +2 | awk -v OFS='\\t' '{print \$1, \$NF, \$2}'"
+alias dima="docker images"
+alias drme="docker ps -q --no-trunc --filter=\"status=exited\" | xargs docker rm"
+alias drmi="docker images | grep \"^<none>\" | awk '{print \$3}' | xargs docker rmi"
+alias dlog="docker logs -f"

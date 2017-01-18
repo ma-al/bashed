@@ -1,0 +1,34 @@
+# Aliases for Git
+
+alias gclo="git clone"
+alias gsta="git status"
+alias gadd="git add"
+alias gbra="git branch -v"
+alias grem="git remote -v"
+alias gcov="git count-objects -v"
+alias glog="git log --oneline"
+alias gchk="git checkout"
+alias gcsa="git commit -sa"
+alias gcom="git commit -s"
+alias gpll="git pull"
+alias gpsh="git push"
+alias gdif="git diff"
+alias gshw="git show"
+
+function gibm
+{
+   echo
+   if [[ -z $1 || -z $2 ]] ; then
+      echo "Missing organisation and/or the repository name"
+      return;
+   fi
+
+   svr="git@github.ibm.com"
+   org="$1"
+   rpo="$2"
+   url="$svr:$org/$rpo.git"
+
+   echo "Cloning $url"
+   gclo $url
+   echo
+}
