@@ -1,0 +1,19 @@
+# basic aliases
+
+alias c=clear
+alias l='ls -Flh --color=auto --time-style=long-iso'
+alias ll='ls -FCAlh --color=auto --time-style=long-iso'
+alias lp='ls -ld --color=auto --time-style=long-iso */'
+alias ap="readlink -e"
+alias xx=exit
+
+alias hg='history | grep -v hg | grep -i '
+alias fp='ps aux | grep -v grep | grep -i '
+alias ps3='pstree -cupsa'
+alias grep='grep --color=always '
+alias grin='grep -rIn'
+
+alias cd="pushd 1> /dev/null "
+alias pd="popd 1> /dev/null "
+alias cdd="cd ~/"
+alias dus="du -h | sort -hr | head -40"
