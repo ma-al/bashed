@@ -3,6 +3,7 @@
 alias cenv='conda info --envs'
 alias cdcp='cd ${CONDA_PREFIX} && echo -n Inside  && pwd'
 alias clis='conda list'
+alias cins='conda install'
 
 function sa
 {
