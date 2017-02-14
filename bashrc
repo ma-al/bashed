@@ -9,6 +9,6 @@ source .bashrc-sources/conda
 source .bashrc-sources/docker
 source .bashrc-sources/git
 source .bashrc-sources/misc
-source .bashrc-sources/vim
+#source .bashrc-sources/vim
 
 details

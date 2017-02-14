@@ -29,8 +29,26 @@ function s:ForbidReplace()
         call feedkeys("\<Insert>", "n")
     endif
 endfunction
+
 augroup ForbidReplaceMode
     autocmd!
     autocmd InsertEnter  * call s:ForbidReplace()
     autocmd InsertChange * call s:ForbidReplace()
 augroup END
+
+
+for f in argv()
+  let perms = getfperm(f)
+  let fsize = getfsize(f)
+  let ftype = getftype(f)
+
+  if perms !~ 'w' && ftype == 'file'
+    echomsg "(" f ") does not seem writable "
+    quit
+  endif
+
+  if isdirectory(f)
+    echomsg "Not opening a directory:" f
+    quit
+  endif
+endfor
