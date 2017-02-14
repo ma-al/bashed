@@ -1,14 +1,25 @@
 set nocompatible
-set backspace=2
 set nu
 set ruler
+
 set autoindent
 set smartindent
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set expandtab
+set smarttab
+
+au BufNewFile,BufRead *.yml,*.yaml,*.json,*.html,*.css
+    \ set tabstop=2 softtabstop=2 shiftwidth=2
+
+au BufNewFile,BufRead *.py,*.md
+    \ set tabstop=4 softtabstop=4 shiftwidth=4 |
+    \ set textwidth=79
+
 set term=xterm
 set whichwrap+=<,>,[,]
-set backspace=indent,eol,start
 set hlsearch
+
+set backspace=2
+set backspace=indent,eol,start
 
 colorscheme peachpuff
 syntax on
