@@ -1,9 +1,13 @@
-# Bash aliases for Ana/Miniconda
+# Bash aliases when working with Python
 
 alias cenv='conda info --envs'
 alias cdcp='cd ${CONDA_PREFIX} && echo -n Inside  && pwd'
 alias clis='conda list'
 alias cins='conda install'
+
+alias plis='pip list'
+alias pins='pip install'
+alias puni='pip uninstall'
 
 function sa
 {
