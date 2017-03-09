@@ -39,8 +39,10 @@ augroup END
 
 for f in argv()
   if !filewritable(f)
-    echomsg "Cannot write to (" f ")"
-    quit
+    if filereadable(f)
+      echomsg "Cannot write to (" f ")"
+      quit
+    endif
   endif
 
   if isdirectory(f)
