@@ -7,7 +7,7 @@ set smartindent
 set expandtab
 set smarttab
 
-au BufNewFile,BufRead *.yml,*.yaml,*.json,*.html,*.css
+au BufNewFile,BufRead *.yml,*.yaml,*.json,*.html,*.css,*.toml
     \ set tabstop=2 softtabstop=2 shiftwidth=2
 
 au BufNewFile,BufRead *.py,*.md,*.txt

@@ -1,5 +1,9 @@
 # Bash aliases when working with Python
 
+alias boa='python'
+alias pyt='boa'
+alias py='boa'
+
 alias cenv='conda info --envs'
 alias cdcp='cd ${CONDA_PREFIX} && echo -n Inside  && pwd'
 alias clis='conda list'
