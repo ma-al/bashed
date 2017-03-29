@@ -1,9 +1,9 @@
 # basic aliases
 
 alias c=clear
-alias l='ls -Flh --color=auto --time-style=long-iso'
-alias ll='ls -FCAlh --color=auto --time-style=long-iso'
-alias lp='ls -ld --color=auto --time-style=long-iso */'
+alias l='ls -Flh'
+alias ll='ls -FCAlh'
+alias lp='ls -ld --color=auto'
 alias ap="readlink -e"
 alias xx=exit
 

@@ -1,10 +1,10 @@
 # Misc aliases and shortcuts
 
-alias ips="ip -o addr show scope global | awk '{gsub(/\/.*/, \" \",\$4); print \$4}'"
+#alias ips="ip -o addr show scope global | awk '{gsub(/\/.*/, \" \",\$4); print \$4}'"
 
 function details
 {
-   IPADDR=`ips`
+   #IPADDR=`ips`
 
    echo
 
@@ -13,9 +13,9 @@ function details
    echo " HOST: "$HOSTNAME
    echo
 
-   for addr in `ips`; do
-      echo " ADDR: $addr"
-   done
+   #for addr in `ips`; do
+   #   echo " ADDR: $addr"
+   #done
 
    echo "============================"
    echo
