@@ -10,5 +10,9 @@ source .bashrc-sources/docker
 source .bashrc-sources/git
 source .bashrc-sources/misc
 #source .bashrc-sources/vim
+source .bashrc-sources/perforce
 
 details
+
+cd $(cat ~/.bash-last-dir)
+echo "Starting in:" $(pwd)
