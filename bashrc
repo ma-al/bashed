@@ -1,6 +1,7 @@
 [ -z "$PS1" ] && return
 PS1="\[\e[0;36m\]\[\e[1;33m\]>>>>\[\e[0m\] "
 
+cd $HOME
 source bashed/exportsrc
 source bashed/basic
 
