@@ -6,6 +6,7 @@ alias ll='ls -FCAlh --color=auto --time-style=long-iso'
 alias lp='ls -ld --color=auto --time-style=long-iso */'
 alias ap="readlink -e"
 alias xx=exit
+alias xo=xdg-open
 
 alias hg='history | grep -v hg | grep -i '
 alias fp='ps aux | grep -v grep | grep -i '
