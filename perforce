@@ -2,4 +2,5 @@
 export P4CONFIG=~/.config/.perforce
 
 alias cdb="cd ~/dev/builds/"
-alias cdx="cd ~/dev/xplat/branches/"
+alias cdxb="cd ~/dev/xplat/branches/"
+alias cdxr="cd ~/dev/xplat/releases/"
