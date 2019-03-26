@@ -1,11 +1,9 @@
 # Misc aliases and shortcuts
 
-alias ips="ip -o addr show scope global | awk '{gsub(/\/.*/, \" \",\$4); print \$4}'"
+alias ips="ip -f inet -o addr show | awk '{gsub(/\/.*/, \" \",\$4); print \$4}'"
 
 function details
 {
-   IPADDR=`ips`
-
    echo
 
    echo "============================"
